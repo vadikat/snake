@@ -19,25 +19,10 @@ namespace snake
            
             p2.Draw();
 
-            List<int> numlist = new List<int>();
-            numlist.Add(0);
-            numlist.Add(1);
-            numlist.Add(2);
+            HorizontalLine line = new HorizontalLine(5,10,8,'+');
+            line.Drow();
 
-            int x = numlist[0];
-            int y = numlist[1];
-            int z = numlist[2];
-
-            foreach(int i in numlist)
-            {
-                Console.WriteLine(i);
-            }
-
-            numlist.RemoveAt(0);
-
-            List<point> pList = new List<point>();
-            pList.Add(p1);
-            pList.Add(p2);
+           
 
 
             Console.ReadLine();
